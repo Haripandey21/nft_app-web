@@ -73,3 +73,12 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# simple form gem
+gem 'simple_form'
+
+# gon gem
+gem 'gon' 
+
+
+gem 'rest-client'
