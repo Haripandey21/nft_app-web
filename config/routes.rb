@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "pages#index"
   get 'mint_nfts' => 'pages#mint' 
+  get 'explore' => 'pages#explore'
 
   resources :pages
 end
