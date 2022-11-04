@@ -7,6 +7,16 @@ Rails.application.routes.draw do
   root "pages#index"
   get 'mint_nfts' => 'pages#mint' 
   get 'explore' => 'pages#explore'
+  get 'add-Token' => 'pages#addToken' 
+  
+
+  get 'buy' => 'nfts#buy'
+  get 'sell' => 'nfts#sell'
+  get 'edit' => 'nfts#edit'
+
 
   resources :pages
+  resources :nfts do
+    resources :sales
+  end
 end

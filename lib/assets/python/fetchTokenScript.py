@@ -20,3 +20,4 @@ tokensInfo = NFTContract.functions.getAllTokens().call()
 print(json.dumps(tokensInfo))
 
 
+

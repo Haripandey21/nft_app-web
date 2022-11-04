@@ -1,0 +1,54 @@
+<br><br>
+<div class="col d-flex justify-content-center">
+<div class="card mb-5" style="max-width: 800px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      
+ <img src="<%= @nft.image_URI %>" class="img-thumbnail w-100" alt=""><br>
+ <div class="col d-flex justify-content-center">
+  <h5 class="card-title">Tokenid#<%= @nft.token_ID%></h5> </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">     
+       <h4>Nft Name : <%= @nft.name%></h4>
+        <p class="card-text">Description : <%= @nft.description%></p>
+        <div id="nftListingForm">
+  <div class="col-md-6 offset-md-3 mt-5">
+    <%= simple_form_for :form , :url=> pages_path, method: :POST, id: 'listFormId' do |f|%>
+      <%= f.input :Listingprice, :as=>:float, :label=>"Listing Price", input_html: { id: 'priceId' } %><br>
+      <%= f.submit "Listing", class: 'btn btn-outline-danger', id: 'listBtn'%>
+    <%end%>   
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>

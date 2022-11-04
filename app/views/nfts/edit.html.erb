@@ -1,0 +1,22 @@
+<div class="col d-flex justify-content-center">
+<div class="card" style="width: 50rem;">
+  <div class="card-body">
+ 
+    <h5 class="card-title">Nft Name </h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ 
+
+
+  <div id="editForm">
+    <%= simple_form_for @nft id: 'formId' do |f|%>
+      <%= f.input :name, :as=>:string, :label=>"New Name", input_html: { id: 'eName' } %>
+      <br>
+      <%= f.input :Description , :as=>:string, :label=>"New Description", input_html: {id: "eDescription"}%>
+      <br>
+      <%= f.submit "Edit", class: 'btn btn-secondary', id: 'edit'%>
+    <%end%>
+     </div>
+
+</div>
+</div>
+</div>

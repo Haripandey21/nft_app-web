@@ -10,44 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_02_150616) do
-  create_table "apps", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "codes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "ideas", force: :cascade do |t|
-    t.integer "token_id"
-    t.integer "n"
-    t.text "tttt"
-    t.text "token_url"
-    t.text "name"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "maps", force: :cascade do |t|
-    t.integer "token_iddd"
-    t.integer "num"
-    t.text "tttt"
-    t.text "token_url"
-    t.text "name"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pages", force: :cascade do |t|
-    t.integer "token_id"
-    t.text "token_url"
-    t.text "name"
-    t.text "description"
+ActiveRecord::Schema[7.0].define(version: 2022_11_04_192327) do
+  create_table "listtokens", force: :cascade do |t|
+    t.integer "token_ID"
+    t.float "token_price"
+    t.boolean "isListed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -60,6 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_02_150616) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "Buy_Sell"
   end
 
 end
