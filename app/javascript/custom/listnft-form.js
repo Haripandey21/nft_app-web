@@ -15,8 +15,7 @@ $(document).on("turbo:load", async  () => {
     function listNft( )
     {
         for(i=0;i<length;i++)
-        {
-        
+        {            
         }
 
     }

@@ -29,9 +29,9 @@ class FetchDataJob < ApplicationJob
 
   def updateModel()
     for i in 0...@nfts.length do
-      token = Table.where(token_ID: @nfts[i][:tokenID]).where(token_URI: @nfts[i][:tokenURI])
+      token = Table.where(table_ID: @nfts[i][:tokenID]).where(token_URI: @nfts[i][:tokenURI])
       if(token.empty?)
-        Table.create(token_ID: @nfts[i][:tokenID], token_URI: @nfts[i][:tokenURI], name: @nfts[i][:name], description: @nfts[i][:description], image_URI: @nfts[i][:imageURI])
+        Table.create(table_ID: @nfts[i][:tokenID], token_URI: @nfts[i][:tokenURI], name: @nfts[i][:name], description: @nfts[i][:description], image_URI: @nfts[i][:imageURI])
       end
     end
   end

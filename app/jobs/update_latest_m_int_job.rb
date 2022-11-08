@@ -6,7 +6,6 @@ class UpdateLatestMIntJob < ApplicationJob
     def perform(contractAddress,totalRow)
       @tokens = `python3 lib/assets/python/updateLatestMint.py "#{contractAddress}" "#{totalRow}"`
       parsedTokens = JSON.parse(@tokens)
-      # parsedTokens = JSON.parse((@tokens.split(/\n/))[1])
       @nfts = Array.new()
       for i in (0...parsedTokens.length)do 
           individualNFTObject = fetchAPI(parsedTokens[i])
@@ -14,6 +13,7 @@ class UpdateLatestMIntJob < ApplicationJob
       end 
       updateModel()
     end
+    
     
     def fetchAPI(individualNFTArray)
       tokenURI  = individualNFTArray[1]
@@ -29,10 +29,11 @@ class UpdateLatestMIntJob < ApplicationJob
   
     def updateModel()
       for i in 0...@nfts.length do
-        token = Table.where(token_ID: @nfts[i][:tokenID]).where(token_URI: @nfts[i][:tokenURI])
+        token = Table.where(table_id: @nfts[i][:tokenID]).where(token_URI: @nfts[i][:tokenURI])
         if(token.empty?)
-          Table.create(token_ID: @nfts[i][:tokenID], token_URI: @nfts[i][:tokenURI], name: @nfts[i][:name], description: @nfts[i][:description], image_URI: @nfts[i][:imageURI])
+          Table.create(table_id: @nfts[i][:tokenID], token_URI: @nfts[i][:tokenURI], name: @nfts[i][:name], description: @nfts[i][:description], image_URI: @nfts[i][:imageURI])
         end
       end
     end
   end
+  

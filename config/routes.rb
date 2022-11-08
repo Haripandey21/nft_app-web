@@ -10,13 +10,16 @@ Rails.application.routes.draw do
   get 'add-Token' => 'pages#addToken' 
   
 
-  get 'buy' => 'nfts#buy'
+
   get 'sell' => 'nfts#sell'
   get 'edit' => 'nfts#edit'
+
+  get 'buynfts' => 'sales#buynfts' 
 
 
   resources :pages
   resources :nfts do
     resources :sales
   end
+
 end

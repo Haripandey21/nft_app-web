@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_04_192327) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_08_121241) do
   create_table "listtokens", force: :cascade do |t|
-    t.integer "token_ID"
+    t.integer "table_id"
     t.float "token_price"
     t.boolean "isListed"
     t.datetime "created_at", null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_04_192327) do
   end
 
   create_table "tables", force: :cascade do |t|
-    t.integer "token_ID"
+    t.integer "table_id"
     t.string "token_URI"
     t.string "image_URI"
     t.string "name"
