@@ -80,5 +80,7 @@ gem 'simple_form'
 # gon gem
 gem 'gon' 
 
-
+# authenticate users..
+gem 'devise'
+ 
 gem 'rest-client'

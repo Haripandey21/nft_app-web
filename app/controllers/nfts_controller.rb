@@ -7,4 +7,5 @@ def sell
     @nft = Table.find(params[:id]) 
 end 
 
+
 end

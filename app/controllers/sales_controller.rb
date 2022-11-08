@@ -32,17 +32,7 @@ class SalesController < ApplicationController
     def buynfts 
         @tokenlist=Listtoken.all
     end
-
-
-    def show
-        @table = Table.find(params[:nft_id]) 
-        @tokenlist=Listtoken.all
- 
-        
-    end
-
     
-
 
 end
 

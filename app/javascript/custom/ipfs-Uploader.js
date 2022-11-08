@@ -1,10 +1,9 @@
 import { Web3Storage } from "web3.storage";
 import { mintNFT } from "../web3/NFTMint";
 let client;
-let api_token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDBkMEFCNDcyMDE0N2E3QkIzMTIxYzEwOTg0OTY2NmIxMEFhRjUxMjUiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NjYxNjkyMDUwOTQsIm5hbWUiOiJuZnRfcHJvamVjdCJ9.5gRrUl2ESv4vkikRYrApPz9kNra9jsy6eQuDkvPczyI"
 
 function getAccessToken() {
-  return api_token;
+  return gon.web3StorageAPIKey;
 }
 
 function makeStorageClient() {

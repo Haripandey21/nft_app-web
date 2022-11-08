@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  # root "articles#index"
   root "pages#index"
+
+  get "mainpage" => "pages#index"
+
+  # root "new_user_session_path"
   get 'mint_nfts' => 'pages#mint' 
   get 'explore' => 'pages#explore'
   get 'add-Token' => 'pages#addToken' 

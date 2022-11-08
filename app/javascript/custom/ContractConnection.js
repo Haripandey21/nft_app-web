@@ -3,7 +3,7 @@ import { web3 } from "./MetamaskConnection";
 let NFTContract;
 
 async function contractConnection() {
-  NFTContract = new web3.eth.Contract(ABI,"0x8E0aC0Cc83c66a6C555344684EEE06D54d203935");
+  NFTContract = new web3.eth.Contract(ABI,gon.contractAddress);
 }
 
 export { contractConnection, NFTContract };
