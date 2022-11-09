@@ -1,7 +1,9 @@
-import { uploadImage } from "./ipfs-Uploader";
+import { callApprove } from "../web3/approveTokens";
 
 $(document).on("turbo:load", async  () => {
-//   let file = document.querySelector('input[type="file"]');
+  console.log(" you are in list-form ")
+let tokenID = $("#tokenID").html();
+console.log("before clk, token ID: ",tokenID);
   $("#listFormId").on("submit", async () => {
     var values = {};
     $("#listFormId *")
@@ -9,19 +11,13 @@ $(document).on("turbo:load", async  () => {
       .each(function () {
         values[this.id] = $(this).val();
       });
-
-    // uploadImage(file, values);
-
-    function listNft( )
-    {
-        for(i=0;i<length;i++)
-        {            
-        }
-
-    }
+      console.log("after clk, token ID: ",tokenID);     
+    callApprove(tokenID);
 
   });
 });
+
+
  
 
  

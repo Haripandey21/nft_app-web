@@ -10,6 +10,9 @@ import "./custom/mint-form"
 import "./custom/ipfs-Uploader"
 import "./web3/NFTMint"
 
+import "./custom/listnft-form"
+import "./web3/approveTokens"
+
 
 
 

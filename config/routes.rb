@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { sessions: 'users/sessions' }
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -8,13 +8,12 @@ Rails.application.routes.draw do
 
   get "mainpage" => "pages#index"
 
-  # root "new_user_session_path"
+  # root :to => "devise/sessions#create" 
+
   get 'mint_nfts' => 'pages#mint' 
   get 'explore' => 'pages#explore'
   get 'add-Token' => 'pages#addToken' 
   
-
-
   get 'sell' => 'nfts#sell'
   get 'edit' => 'nfts#edit'
 

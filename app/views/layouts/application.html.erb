@@ -16,6 +16,7 @@
   <body>
      <div id="wrap">
       <%= render 'shared/nav'%>
+      <%= Gon::Base.render_data %>
       <div id="container">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
