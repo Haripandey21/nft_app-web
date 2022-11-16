@@ -1,0 +1,30 @@
+[
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_contractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenID",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_Amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferNfts",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]

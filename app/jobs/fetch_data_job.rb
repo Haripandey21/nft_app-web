@@ -18,7 +18,7 @@ class FetchDataJob < ApplicationJob
   def fetchAPI(individualNFTArray)
     tokenURI  = individualNFTArray[1]
     singleNFT = Hash[]
-    tokenIPFSData = JSON.parse(RestClient::Request.execute(method: :get, url: tokenURI, timeout: 10))
+    tokenIPFSData = JSON.parse(RestClient::Request.execute(method: :get, url: tokenURI, timeout: 20))
     singleNFT[:tokenID] = individualNFTArray[0]
     singleNFT[:tokenURI] = individualNFTArray[1]
     singleNFT[:name] = tokenIPFSData["name"]
@@ -26,6 +26,7 @@ class FetchDataJob < ApplicationJob
     singleNFT[:imageURI] = tokenIPFSData["image"]
     return singleNFT
   end
+  
 
   def updateModel()
     for i in 0...@nfts.length do

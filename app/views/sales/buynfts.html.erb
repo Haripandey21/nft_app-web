@@ -13,11 +13,9 @@
       <% @tokenlist.each do |table|%>
         <tr class="align-middle text-center">
           <td><%= table.table_id %></td>
-          <td><%= table.token_price %> eth</td>
-          
+          <td><%= table.token_price %> eth</td>          
          <td>                    
-            <%= link_to 'Buy',new_nft_sale_path(table.table_id),class:'btn btn-danger'%> 
-       
+            <%= link_to 'Buy',buy_path(table.table_id),class:'btn btn-danger'%>        
             </td>     
         </tr>        
       <% end%>

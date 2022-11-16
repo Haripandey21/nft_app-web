@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Future Work 
+```bash 
+
+* Deviser setup for signup, signin , authentication 
+```

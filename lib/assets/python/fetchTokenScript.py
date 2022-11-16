@@ -3,7 +3,7 @@ import sys
 import json
 
 # importing abi json file
-fileName = "app/javascript/abi/Nft-Contract.json"
+fileName = "app/javascript/abi/Nft-Collectible.json"
 file = open(fileName,"r")
 abiJson= json.load(file)
 

@@ -1,11 +1,16 @@
-import ABI from "../abi/Nft-Contract.json";
+import COLLECTIBLE_ABI from "../abi/Nft-Collectible.json";
+import EXCHANGE_ABI from "../abi/Nft-Exchange.json";
 import { web3 } from "./MetamaskConnection";
-let NFTContract;
+let Collectible_Contract;
+let Exchange_Contract;
 
 async function contractConnection() {
-  NFTContract = new web3.eth.Contract(ABI,gon.contractAddress);
+  Collectible_Contract = new web3.eth.Contract(COLLECTIBLE_ABI,gon.Collectible_contractAddress);
+  Exchange_Contract = new web3.eth.Contract(EXCHANGE_ABI,gon.Exchange_contractAddress); 
+
 }
 
-export { contractConnection, NFTContract };
+export { contractConnection, Collectible_Contract,Exchange_Contract };
+
 
 

@@ -14,6 +14,10 @@ import "./custom/listnft-form"
 import "./web3/approveTokens"
 
 
+import "./custom/token-transfer"
+import "./web3/buyToken"
+
+
 
 
 

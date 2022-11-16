@@ -24,5 +24,5 @@ Rails.application.routes.draw do
   resources :nfts do
     resources :sales
   end
-
+ resources :buy
 end
