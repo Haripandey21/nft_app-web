@@ -14,22 +14,9 @@ async function transferToken(tokenID,tokenPrice) {
 
     const TransferEvent = await Collectible_Contract.getPastEvents("Transfer", {}); 
     console.log("Transfer Events : ",TransferEvent);
-
-    if (TransferEvent)
-    {
-      let seller= await Collectible_Contract.methods.ownerOf(tokenID).call();
-      console.log("seller",seller)
-      await Exchange_Contract.methods.transferEther(seller,amount).send ({from: address[0]});
-      console.log("fund settlement");
-    }
-  
+ 
 }
 export {transferToken};
-
-
-
-
-
 
 
 
