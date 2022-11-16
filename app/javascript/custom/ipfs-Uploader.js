@@ -38,6 +38,7 @@ async function uploadMetaData(nftJSON, inputValues) {
 }
 
 
+
 // function to make a json metaData for nft
 function jsonConvert(imageURI, inputValues) {
   jsonObject = {
