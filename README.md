@@ -8,7 +8,14 @@ Set of two contracts : Collectibles and exchange.Sale is organized in two transa
 ## Installation 
 1. clone this repo 
 `https://github.com/Haripandey21/nft_app-web.git` 
-2. and Start the rails Server 
+2. rails db:migrate
+3. npm install
+4. bundle install 
+5. and Start the rails Server 
  ```bash
  rails s 
+
  ```
+ ## Demo 
+ ----------------------------------------------------------------------------------------------
+ ----------------------------------------------------------------------------------------------
