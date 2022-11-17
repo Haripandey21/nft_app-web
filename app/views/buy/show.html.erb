@@ -1,21 +1,24 @@
-
-<div class="col d-flex justify-content-center">
-<div class="card mb-10" style="max-width: 800px;">
+<br><br>
+<div class="col d-flex justify-content-center ">
+<div class="card mb-5" style="max-width: 500px;">
   <div class="row no-gutters">
-    <div class="col-md-30">
-      
- <div class="col d-flex justify-content-center">
-   <h5 class="card-title">Token#</h5>
-      <h5 class="card-title" id="tokenID"><%=@list.table_id%></h5>
-    </div>    
-    <div></div>
-      <div  class="card-body col d-flex justify-content-center text-bg"><h5> Listed Price :</h5> 
+    <div class="col-md-4">      
+ <img src="<%= @com.first.image_URI %>" class="img-thumbnail w-100" alt=""><br>
+ <div class="col d-flex justify-content-center shadow-sm p-3 mb-5 bg-white rounded">
+ <h6>Tokenid#</h6>
+  <h6  id ="tokenID" class="card-title"><%= @list.table_id%></h6> </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">     
+             <div class="col d-flex justify-content-center shadow p-1 mb-2 bg-white rounded">
+              <h4>Nft Name : <%= @com.first.name%></h4>
+              </div>
+       </div>
+            <div class="card-text">Description : <%= @com.first.description%></div>
+        <div  class="card-body col d-flex text-sm"><h5> Listed Price :</h5> 
      <h5 id="listedPrice"><%= @list.token_price%></h5><h5>Eth</h5>
      </div>
-      </div>
-      <div>
-       <button id="buyBtnId" type="button" class="btn btn-outline-primary">Buy</button> <br>
-      </div>
+          <button id="buyBtnId" type="button" class="btn btn-outline-primary">Buy</button>       
     </div>
   </div>
 </div>
@@ -26,9 +29,3 @@
 
 
 
-
-
-
-
-
- 
