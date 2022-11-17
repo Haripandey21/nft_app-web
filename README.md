@@ -54,18 +54,20 @@ Set of two contracts : Collectibles and exchange.Sale is organized in two transa
 
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/7.png)
  ----------------------------------------------------------------------------------
-
-    let's sign in from another account & buy that token id_15 :-
+ let's sign in from another account & buy that token id_15 :-
 
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/8.png)
  ------------------------------------------------------------------------------------
-  lets buyyyy this token in that pre-defined price :-
+  lets buyyyy this token_15 in that pre-defined price :-
+
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/9.png)
     ----------------------------------------------------------------------------------
-    can able to track the transactions via etherscan :-
+ can able to track the transactions via etherscan :-
+
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/10.png)
  ---------------------------------------------------------------------------------------
  here seller received his Nfts's amount, & that specific Nft are transfered to your address 
+
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/11.png)
 
  ----------------------------------------------------------------------------------------------
