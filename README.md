@@ -18,7 +18,10 @@ Set of two contracts : Collectibles and exchange.Sale is organized in two transa
  ```
  ## Demo 
  ----------------------------------------------------------------------------------------------
- ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/1.png =600x400)
+ `metamask login`
+ ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/1.png)
+
+ `main page :- `
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/2.png)
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/3.png)
  ![](https://github.com/Haripandey21/nft_app-web/blob/main/app/assets/images/4.png)
